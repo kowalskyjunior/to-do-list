@@ -57,7 +57,7 @@ form input[type='submit']{
     padding: 10px;
     position: relative;
     top: -1px;
-    background-color: var(--header-color);
+    background-color: rgba(10,23,55,0.5);
     border: none;
     color: var(--light-color);
     border-radius: 5px;
