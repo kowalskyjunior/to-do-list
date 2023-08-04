@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --header-color: #352356;
+    --body-color: #ffaa00;
+    --light-color: #eeee;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    background-color: rgba(10,23,55,0.5);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    color: var(--light-color);
+}
+
+body{
+    background-image: url(https://c.pxhere.com/images/f1/13/5e62418459a2c8529f76c11e6e48-1669894.jpg!d);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+section.section-data form{
+    text-align: center;
+    background-color: rgba(10,23,55,0.5);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form input[type='text']{
+    height: 35px;
+    outline: none;
+    width: 80%;
+    max-width: 400px;
+    padding-left: 7px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: #352356 solid 2px;
+}
+
+form input[type='submit']{
+    padding: 10px;
+    position: relative;
+    top: -1px;
+    background-color: var(--header-color);
+    border: none;
+    color: var(--light-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type='submit']:hover{
+    background-color: var(--body-color);
+    color: var(--header-color);
+}
+
+section.list-data{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.list-wraper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--header-color);
+}
+
+.list-single{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    padding: 20px;
+    color: var(--light-color);
+    border-radius: 10px;
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+    height: 25px;
+    transition: 0.2s;
+}
+
+.material-symbols-outlined:hover{
+    background-color: red;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 510px){
+    form input[type='submit']{
+        margin-top: 10px;
+    }
+
+    body{
+        background-image: url(https://c.pxhere.com/images/f1/13/5e62418459a2c8529f76c11e6e48-1669894.jpg!d);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+}
